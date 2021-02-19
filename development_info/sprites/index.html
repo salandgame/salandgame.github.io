@@ -10,16 +10,16 @@
       
       
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.12">
     
     
       
-        <title>Development version - Saland Docs</title>
+        <title>Sprites - Saland Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4dd2dd8d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
       
       
     
@@ -49,7 +49,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#development-version" class="md-skip">
+        <a href="#sprites" class="md-skip">
           Skip to content
         </a>
       
@@ -60,7 +60,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="Saland Docs" class="md-header-nav__button md-logo" aria-label="Saland Docs">
+    <a href="../.." title="Saland Docs" class="md-header-nav__button md-logo" aria-label="Saland Docs">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -77,7 +77,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Development version
+              Sprites
             
           </span>
         </div>
@@ -134,7 +134,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Saland Docs" class="md-nav__button md-logo" aria-label="Saland Docs">
+    <a href="../.." title="Saland Docs" class="md-nav__button md-logo" aria-label="Saland Docs">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -151,8 +151,20 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Saland Adventures" class="md-nav__link">
+    <a href="../.." title="Saland Adventures" class="md-nav__link">
       Saland Adventures
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../development_version/" title="Development version" class="md-nav__link">
+      Development version
     </a>
   </li>
 
@@ -164,28 +176,9 @@
   
 
 
-  <li class="md-nav__item md-nav__item--active">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Development version" class="md-nav__link md-nav__link--active">
-      Development version
-    </a>
-    
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Development info
@@ -205,7 +198,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../development_info/libraries/" title="Libraries" class="md-nav__link">
+    <a href="../libraries/" title="Libraries" class="md-nav__link">
       Libraries
     </a>
   </li>
@@ -215,11 +208,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../development_info/sprites/" title="Sprites" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Sprites" class="md-nav__link md-nav__link--active">
       Sprites
     </a>
+    
   </li>
 
         
@@ -229,7 +231,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../development_info/tiled/" title="Tiled" class="md-nav__link">
+    <a href="../tiled/" title="Tiled" class="md-nav__link">
       Tiled
     </a>
   </li>
@@ -271,16 +273,75 @@
                   
                 
                 
-                <h1 id="development-version">Development version</h1>
-<p>Windows nightly builds can be found here: (https://files.poulsander.com/~poul19/public_files/saland/windows_nightly/)</p>
-<p>For Linux the easiest option is to compile it from source (https://github.com/salandgame/saland).
-It goes like this: </p>
-<pre><code>git checkout https://github.com/salandgame/saland.git
-cd saland
-cmake .
-make
-#./saland # to run
+                <h1 id="sprites">Sprites</h1>
+<p>The sprites are located in data/sprites/*.sprite</p>
+<p>They are json files which looks like this:</p>
+<pre><code>{
+
+&quot;item_food_potato&quot; : {
+        &quot;texture&quot; : &quot;food&quot;,
+        &quot;topx&quot; : 0,
+        &quot;topy&quot; : 0,
+        &quot;height&quot; : 32,
+        &quot;width&quot; : 32,
+        &quot;originx&quot; : 16,
+        &quot;originy&quot; : 16
+}
+
+}
 </code></pre>
+<p>In this case:</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>meaning</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>item_food_potato</td>
+<td>This is the name of the sprite</td>
+<td>Object representing the sprite</td>
+</tr>
+<tr>
+<td>texture</td>
+<td>The texture refering. "food" means "data/textures/food.png"</td>
+<td>string</td>
+</tr>
+<tr>
+<td>topx</td>
+<td>The topx cooridinate of the top-left cornor of the sprite in the texture</td>
+<td>int</td>
+</tr>
+<tr>
+<td>topy</td>
+<td>The topy cooridinate of the top-left cornor of the sprite in the texture</td>
+<td>int</td>
+</tr>
+<tr>
+<td>height</td>
+<td>Height of the sprite</td>
+<td>int</td>
+</tr>
+<tr>
+<td>width</td>
+<td>Width of a frame in the sprite</td>
+<td>int</td>
+</tr>
+<tr>
+<td>originx</td>
+<td>There the engine starts drawing. Defaults to 0</td>
+<td>float</td>
+</tr>
+<tr>
+<td>originy</td>
+<td>There the engine starts drawing. Defaults to 0</td>
+<td>float</td>
+</tr>
+</tbody>
+</table>
                 
               
               
@@ -299,7 +360,7 @@ make
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href=".." title="Saland Adventures" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../libraries/" title="Libraries" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -308,19 +369,19 @@ make
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Saland Adventures
+                Libraries
               </div>
             </div>
           </a>
         
         
-          <a href="../development_info/libraries/" title="Libraries" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../tiled/" title="Tiled" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Libraries
+                Tiled
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -347,15 +408,15 @@ make
       
     </div>
     
-      <script src="../assets/javascripts/vendor.3636a4ec.min.js"></script>
-      <script src="../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
