@@ -253,12 +253,26 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#layers" class="md-nav__link">
     Layers
   </a>
   
     <nav class="md-nav" aria-label="Layers">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefab_marking" class="md-nav__link">
+    prefab_marking
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#mutableobjects" class="md-nav__link">
@@ -275,13 +289,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#blocking_overlay_1" class="md-nav__link">
-    blocking_overlay_1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#overlay_1" class="md-nav__link">
     overlay_1
   </a>
@@ -289,8 +296,36 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#prefab_overlay_1" class="md-nav__link">
+    prefab_overlay_1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocking_overlay_1" class="md-nav__link">
+    blocking_overlay_1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefab_blocking_2" class="md-nav__link">
+    prefab_blocking_2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#blocking" class="md-nav__link">
     blocking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefab_ground_1" class="md-nav__link">
+    prefab_ground_1
   </a>
   
 </li>
@@ -350,12 +385,26 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    Implementation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#layers" class="md-nav__link">
     Layers
   </a>
   
     <nav class="md-nav" aria-label="Layers">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prefab_marking" class="md-nav__link">
+    prefab_marking
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#mutableobjects" class="md-nav__link">
@@ -372,13 +421,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#blocking_overlay_1" class="md-nav__link">
-    blocking_overlay_1
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#overlay_1" class="md-nav__link">
     overlay_1
   </a>
@@ -386,8 +428,36 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#prefab_overlay_1" class="md-nav__link">
+    prefab_overlay_1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blocking_overlay_1" class="md-nav__link">
+    blocking_overlay_1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefab_blocking_2" class="md-nav__link">
+    prefab_blocking_2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#blocking" class="md-nav__link">
     blocking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prefab_ground_1" class="md-nav__link">
+    prefab_ground_1
   </a>
   
 </li>
@@ -430,7 +500,13 @@
                 <h1 id="tiled">Tiled</h1>
 <p>Saland uses tmx files for <a href="https://www.mapeditor.org/">Tiled</a>.</p>
 <p>There are some requirements to how the files need to look in order for them to work.</p>
+<h2 id="implementation">Implementation</h2>
+<p>The layer order is currently defined in <code>src/saland/model/World.cpp</code></p>
 <h2 id="layers">Layers</h2>
+<h3 id="prefab_marking">prefab_marking</h3>
+<p>Marks the prefabs. This is a collection of several tiles like a house.
+Prefabs are copied to the map once placed, so updating the templete has no effect.
+Any tile touched by a rectangle on the prefab_marking layer are considered protected and managed by the prefab system.</p>
 <h3 id="mutableobjects">mutableObjects</h3>
 <p>This layer contains the elements which the game itself uses to make the world consistent. Element on this layer can be removed or added by the engine.
 Examples for this is: Trees, barrels etc.</p>
@@ -454,13 +530,21 @@ Examples for this is: Trees, barrels etc.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="blocking_overlay_1">blocking_overlay_1</h3>
-<p>Managed by the engine. The engine might put elements which belongs to the blocking layer.</p>
 <h3 id="overlay_1">overlay_1</h3>
-<p>A layer drawn above the player player layer. Can be used for cieling bars or signposts.</p>
+<p>A layer drawn above the player layer. Can be used for cieling bars or signposts.
+This layer is currently ignored by the engine.</p>
+<h3 id="prefab_overlay_1">prefab_overlay_1</h3>
+<p>Tiles on this layer are managed by the prefab system. Any tile on this layer should be protected by the prefab_marking-layer.</p>
+<h3 id="blocking_overlay_1">blocking_overlay_1</h3>
+<p>Managed by the engine. The engine might put elements which belongs to the blocking layer.
+This is used by some tiles which needs an extra layer to blend correctly.</p>
+<h3 id="prefab_blocking_2">prefab_blocking_2</h3>
+<p>A blocking layer managed by the prefab system. Any tile on this layer should be protected by the prefab_marking-layer.</p>
 <h3 id="blocking">blocking</h3>
 <p>This is the blocking layer. All tiles on this layer blocks the player.
 The engine may change this layer.</p>
+<h3 id="prefab_ground_1">prefab_ground_1</h3>
+<p>A ground layer managed by the prefab system. Any tile on this layer should be protected by the prefab_marking-layer.</p>
 <h3 id="ground_2">ground_2</h3>
 <p>The layer below the ground blocking layer. Might be managed by the engine in the future</p>
 <h3 id="ground_1">ground_1</h3>
