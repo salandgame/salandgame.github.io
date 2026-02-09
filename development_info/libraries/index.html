@@ -526,17 +526,17 @@
 <h2 id="dependencies">Dependencies</h2>
 <h3 id="sdl-2">SDL 2</h3>
 <p><a href="https://www.libsdl.org/">Homepage</a></p>
-<p>This is the fundation of all my C++ games. It cross compiles and is relatively easy to pack.
+<p>This is the foundation of all my C++ games. It cross compiles and is relatively easy to pack.
 In contrast to other native C++ libraries like SFML, RAII is not included by default. However, while working with SFML I found that I ended up with my own RAII layer anyway.</p>
 <h3 id="sdl2_gfx">SDL2_gfx</h3>
 <p><a href="https://sourceforge.net/projects/sdl2gfx/">Homepage</a></p>
-<p>Easily mistaken for an actual part of SDL2. It is that conformaty which makes it attractive.</p>
+<p>Easily mistaken for an actual part of SDL2. It is that conformity which makes it attractive.</p>
 <h3 id="physfs">PhysFS</h3>
 <p><a href="https://icculus.org/physfs/">Homepage</a></p>
-<p>This is the library used for abstracting the file system. The system is strongly inspired by the system used by Quake 3. It is also fantiastic for mod support.</p>
+<p>This is the library used for abstracting the file system. The system is strongly inspired by the system used by Quake 3. It is also fantastic for mod support.</p>
 <h3 id="boost_program_options">boost_program_options</h3>
 <p><a href="https://www.boost.org/doc/libs/1_76_0/doc/html/program_options.html">Homepage</a></p>
-<p>Used to parse program options from command line or config file. Primarily used because I like the format for <code>saland -h</code>. There are other libraries that does the same but I prefer the boost option if it is availeble. </p>
+<p>Used to parse program options from command line or config file. Primarily used because I like the format for <code>saland -h</code>. There are other libraries that do the same but I prefer the boost option if it is available. </p>
 <h3 id="boost-headers">boost (headers)</h3>
 <p><a href="https://www.boost.org/">Homepage</a></p>
 <p>For basic algorithms I turn to boost. Used tokenizer and predicate. It is big dependency in size but I find the number of dependencies to be more problematic than the size.</p>
@@ -544,20 +544,20 @@ In contrast to other native C++ libraries like SFML, RAII is not included by def
 <h3 id="box2d">Box2d</h3>
 <p><a href="https://box2d.org/">Homepage</a></p>
 <p>This is used for the physics. Using physics in a top down game gives a feeling of pushing things around that I like.
-I include box2d as a bundled dependency. The reason is that Box2d does not guarentee compatibility between even versions. Even minor versions might break the API.</p>
+I include box2d as a bundled dependency. The reason is that Box2d does not guarantee compatibility between even versions. Even minor versions might break the API.</p>
 <h3 id="b64">b64</h3>
 <p><a href="http://libb64.sourceforge.net/">Homepage</a> <a href="https://sources.debian.org/patches/libb64/1.2-5/">(Debian patches)</a></p>
-<p>Used for base64 encoding and decoding for the Tiled format. During development I got depended on some of the Debian changes. There is an unmerged patch on the SalesForce project and without that patch everything breaks horrible. Buffer overflows are a major problem in C and b64 is very prone to them without the patch.</p>
+<p>Used for base64 encoding and decoding for the Tiled format. During development I got dependent on some of the Debian changes. There is an unmerged patch on the SalesForce project and without that patch everything breaks horribly. Buffer overflows are a major problem in C and b64 is very prone to them without the patch.</p>
 <h3 id="utf8cpp">utf8cpp</h3>
 <p><a href="https://github.com/nemtrif/utfcpp">Homepage</a></p>
-<p>The nononse working version of UTF-8 for C++. The biggest problem with this library is that Linux distribution package it differently and MXE.cc does not pack it at all. Therefore the library is also bundled.</p>
+<p>The no-nonsense working version of UTF-8 for C++. The biggest problem with this library is that Linux distribution package it differently and MXE.cc does not pack it at all. Therefore the library is also bundled.</p>
 <h3 id="rapidxml">rapidxml</h3>
 <p><a href="http://rapidxml.sourceforge.net/">Homepage</a></p>
 <p>Used by the homemade tiled-library. This is a header only.
-I have experieced some version compatibility trouble while working with Cereal, so I embed a specific version.</p>
+I have experienced some version compatibility trouble while working with Cereal, so I embed a specific version.</p>
 <h3 id="rapidjson">rapidjson</h3>
 <p><a href="https://rapidjson.org/">Homepage</a></p>
-<p>Used by the commen "sago" files shared with Block Attack - Rise of the Blocks. Bundled due to compatiblity concers found in Cereal.</p>
+<p>Used by the common "sago" files shared with Block Attack - Rise of the Blocks. Bundled due to compatibility concerns found in Cereal.</p>
 <h3 id="platformfolders">PlatformFolders</h3>
 <p><a href="https://github.com/sago007/PlatformFolders">Homepage</a></p>
 <p>My own library for handling access to Save games folders on different platforms.

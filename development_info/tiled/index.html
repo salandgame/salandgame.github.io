@@ -517,10 +517,10 @@
 <h2 id="layers">Layers</h2>
 <h3 id="prefab_marking">prefab_marking</h3>
 <p>Marks the prefabs. This is a collection of several tiles like a house.
-Prefabs are copied to the map once placed, so updating the templete has no effect.
+Prefabs are copied to the map once placed, so updating the template has no effect.
 Any tile touched by a rectangle on the prefab_marking layer are considered protected and managed by the prefab system.</p>
 <h3 id="mutableobjects">mutableObjects</h3>
-<p>This layer contains the elements which the game itself uses to make the world consistent. Element on this layer can be removed or added by the engine.
+<p>This layer contains the elements which the game itself uses to make the world consistent. Elements on this layer can be removed or added by the engine.
 Examples for this is: Trees, barrels etc.</p>
 <p>Some elements (barrels, trees) blocks the player.</p>
 <h3 id="object1">object1</h3>
@@ -536,14 +536,14 @@ Examples for this is: Trees, barrels etc.</p>
 </thead>
 <tbody>
 <tr>
-<td>Retangle</td>
+<td>Rectangle</td>
 <td>type = "protectedRegion"</td>
-<td>Tells the engine to not allow the player to do any changes. The reqion is protected</td>
+<td>Tells the engine to not allow the player to do any changes. The region is protected</td>
 </tr>
 </tbody>
 </table>
 <h3 id="overlay_1">overlay_1</h3>
-<p>A layer drawn above the player layer. Can be used for cieling bars or signposts.
+<p>A layer drawn above the player layer. Can be used for ceiling bars or signposts.
 This layer is currently ignored by the engine.</p>
 <h3 id="prefab_overlay_1">prefab_overlay_1</h3>
 <p>Tiles on this layer are managed by the prefab system. Any tile on this layer should be protected by the prefab_marking-layer.</p>
